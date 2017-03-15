@@ -27,7 +27,7 @@ var rings = [[]];
 var permNum = 0;
 
 //time to wait between each sound
-var waitTime = 1450;
+var waitTime = 450;
 
 //number of blocks out of the permutations displayed
 var numDisplayed = 0;
@@ -115,7 +115,7 @@ function draw() {
             //DING!
             console.log("ding!");
             //sound goes here
-            osc.freq(permutations[numDisplayed]*60);
+            osc.freq(permutations[numDisplayed]*90);
             envelope.play(osc,0,0.1);
         };
         //reset time delay for the drawing of blocks
